@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <TextView android:text="@string/autonomous_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/game_period"
+        android:textStyle="bold"/>
+    <TextView android:text="@string/autonomous_position_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/category"
+        />
+    <RadioGroup android:id="@+id/auton_position_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:id="@+id/autonomous_nowhere_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton android:id="@+id/autonomous_floor_zone_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autonomous_floor_zone_text"
+            android:textSize="@dimen/selection"
+            />
+        <RadioButton android:id="@+id/autonomous_partial_low_zone_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autonomous_partial_low_zone_text"
+            android:textSize="@dimen/selection"/>
+        <RadioButton android:id="@+id/autonomous_low_zone_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autonomous_low_zone_text"
+            android:textSize="@dimen/selection"/>
+        <RadioButton android:id="@+id/autonomous_mid_zone_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autonomous_mid_zone_text"
+            android:textSize="@dimen/selection"/>
+        <RadioButton android:id="@+id/autonomous_high_zone_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autonomous_high_zone_text"
+            android:textSize="@dimen/selection"/>
+    </RadioGroup>
+
+    <TextView android:text="@string/autonomous_beacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/category"
+        />
+
+    <CheckBox android:id="@+id/autonomous_repair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/autonomous_repair_text"
+        android:textSize="@dimen/selection"/>
+
+    <CheckBox android:id="@+id/autonomous_repair_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/autonomous_color_text"
+        android:textSize="@dimen/selection"/>
+
+    <TextView android:text="@string/autonomous_beacon_press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sub_category"
+        />
+
+    <RadioGroup android:id="@+id/autonomous_beacon_press_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/autonomous_beacon_first_press_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autonomous_beacon_first_press_text"
+            android:textSize="@dimen/selection"/>
+        <RadioButton android:id="@+id/autonomous_beacon_second_press_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autonomous_beacon_second_press_text"
+            android:textSize="@dimen/selection"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/autonomous_climbers"
+        android:textSize="@dimen/category"/>
+    <RadioGroup android:id="@+id/autonomous_climbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/autonomous_climbers_zero_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero_climbers_text"
+            android:textSize="@dimen/selection"/>
+
+        <RadioButton android:id="@+id/autonomous_climbers_one_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/one_climbers_text"
+            android:textSize="@dimen/selection"/>
+        <RadioButton android:id="@+id/autonomous_climbers_two_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/two_climbers_text"
+            android:textSize="@dimen/selection"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>
